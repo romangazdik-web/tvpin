@@ -1,7 +1,7 @@
 {
   "name": "nyminds-iptv-tizenbrew-test",
-  "version": "1.1.2",
-  "description": "Nymind LIVE 1.1.2: CZ/SK EPG refresh from a more complete source and safe handling of outdated manual guide bindings; design and playback unchanged.",
+  "version": "1.2.0",
+  "description": "Nymind LIVE 1.2.0: custom favorite channel order, multi-day EPG navigation and diagnostics, detailed program info and player progress.",
   "packageType": "app",
   "appName": "Nymind Živá TV",
   "appPath": "app/tv09.html",
