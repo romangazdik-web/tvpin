@@ -1,7 +1,7 @@
 {
   "name": "nyminds-iptv-tizenbrew-test",
-  "version": "1.0.0",
-  "description": "Nymind LIVE 1.0: samostatná IPTV s M3U, kategoriemi, oblíbenými kanály a historií sledování.",
+  "version": "1.0.1",
+  "description": "Nymind LIVE: obnova šifrovaného původního playlistu, lokální zapamatování kanálů, oblíbené a historie.",
   "packageType": "app",
   "appName": "Nymind Živá TV",
   "appPath": "app/tv09.html",
