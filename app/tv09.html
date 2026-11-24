@@ -164,7 +164,7 @@ function loadFilePlaylist(){
 }
 function openDialog(){prevFocus=document.activeElement;dialogOpen=true;$('m3uUrl').value=playlistUrl||'';$('remember').checked=!!(function(){try{return localStorage.getItem(STORE_URL);}catch(e){return false;}})();safeText('playlistStatus','');safeText('dialogError','');show('dialogOverlay',true);$('m3uUrl').focus();}
 function closeDialog(){if(playlistLoading)return;dialogOpen=false;show('dialogOverlay',false);if(prevFocus&&prevFocus.focus)prevFocus.focus();}
-function forgetPlaylist(){try{localStorage.removeItem(STORE_URL);sessionStorage.removeItem(STORE_URL);}catch(e){}playlistUrl='';channels=[];groups=[];shown=[];page=0;selectedGroup='__all';$('m3uUrl').value='';safeText('playlistStatus','Adresa byla smazána z tohoto prohlížeče.');render();}
+function forgetPlaylist(){try{localStorage.removeItem(STORE_URL);localStorage.removeItem(STORE_TEXT);sessionStorage.removeItem(STORE_URL);}catch(e){}playlistUrl='';channels=[];groups=[];shown=[];page=0;selectedGroup='__all';$('m3uUrl').value='';safeText('playlistStatus','Adresa byla smazána z tohoto prohlížeče.');render();}
 function smartCategory(c){
  var s=((c.group||'')+' '+(c.name||'')).toLowerCase();
  if(/(sport|šport|football|fotbal|hokej|tenis|arena|eurosport|premier league|liga mistrů|formula|f1|moto gp|sportovní|sportovni)/i.test(s))return 'Sport';
@@ -430,6 +430,7 @@ function pinInput(e,code){
  var root=$('pinKeys'),n=Array.prototype.indexOf.call(root.children,document.activeElement);
  if(n<0)n=0;
  if(code===13){if(!e.repeat)pressPin(n);}
+ else if(code===10009||code===8||code===27){show('pinBox',false);openDialog();}
  else if(code>=48&&code<=57){if(!e.repeat)pressPin(code===48?10:code-49);}
  else if(code>=37&&code<=40){var d={37:-1,38:-3,39:1,40:3}[code];root.children[Math.max(0,Math.min(11,n+d))].focus();}
  else return false;
