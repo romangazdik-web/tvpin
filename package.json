@@ -1,7 +1,7 @@
 {
   "name": "nyminds-iptv-tizenbrew-test",
-  "version": "1.2.0",
-  "description": "Nymind LIVE 1.2.0: custom favorite channel order, multi-day EPG navigation and diagnostics, detailed program info and player progress.",
+  "version": "1.3.0",
+  "description": "Nymind LIVE 1.3.0 Modern Dark Edition: redesigned home with live-program hero, logo cards, modern guide and player overlay; favorites and playlist preserved.",
   "packageType": "app",
   "appName": "Nymind Živá TV",
   "appPath": "app/tv09.html",
