@@ -1,7 +1,7 @@
 {
   "name": "nyminds-iptv-tizenbrew-test",
-  "version": "1.0.1",
-  "description": "Nymind LIVE: obnova šifrovaného původního playlistu, lokální zapamatování kanálů, oblíbené a historie.",
+  "version": "1.1.0",
+  "description": "Obnovený původní Nymind LIVE 2.0.28: karty TV stanic, oblíbené, historie, EPG a ovládání Samsung. Živá TV 1.1.0.",
   "packageType": "app",
   "appName": "Nymind Živá TV",
   "appPath": "app/tv09.html",
