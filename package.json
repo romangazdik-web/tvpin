@@ -1,7 +1,7 @@
 {
   "name": "nyminds-iptv-tizenbrew-test",
-  "version": "1.3.3",
-  "description": "Nymind LIVE 1.3.3: shared RED Home and GREEN App Switcher; playlist, EPG, favorites and normal BACK unchanged.",
+  "version": "1.3.4",
+  "description": "Nymind LIVE 1.3.4: RED Home points to stable Nymind OS 6 CINEMATIC; player, EPG, favorites, playlists and normal BACK untouched.",
   "packageType": "app",
   "appName": "Nymind Živá TV",
   "appPath": "app/tv09.html",
